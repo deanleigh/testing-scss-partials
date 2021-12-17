@@ -1,0 +1,21 @@
+.header {
+  display: grid;
+  justify-content: center;
+}
+
+@for $i from 1 through 12 {
+
+/*
+------------------------
+data-screen-col_#{$i}
+------------------------
+*/
+
+  @media only screen and (min-width: more-than-#{$i}-col) {
+    .feature__menu[data-screen-col_#{$i}~="align-content:center;"] {
+      .feature-layout__group {
+        align-content: center;
+      }
+    }
+  }
+}
