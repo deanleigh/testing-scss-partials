@@ -1,0 +1,15 @@
+
+
+@use '../defaults';
+
+.title {
+ font-size: defaults.$large;
+ color: defaults.$blue;
+}
+
+.description {
+    color: defaults.$red;
+    }
+
+
+
